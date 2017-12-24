@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>叉叉开发 · GitBook</title>
+        <title>热部署 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -12,20 +12,20 @@
         
         
     
-    <link rel="stylesheet" href="gitbook/style.css">
+    <link rel="stylesheet" href="../../gitbook/style.css">
 
     
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
                 
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
                 
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
         
@@ -53,12 +53,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
-    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="cha-cha-kai-fa/ti-shi.html" />
     
+    <link rel="prev" href="../spring-boot.html" />
     
 
     </head>
@@ -87,9 +87,9 @@
         
         
     
-        <li class="chapter " data-level="1.1" data-path="./">
+        <li class="chapter " data-level="1.1" data-path="../../">
             
-                <a href="./">
+                <a href="../../">
             
                     
                     Yan的技术栈
@@ -101,9 +101,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.1.1" data-path="java.html">
+        <li class="chapter " data-level="1.1.1" data-path="../../java.html">
             
-                <a href="java.html">
+                <a href="../../java.html">
             
                     
                     Java
@@ -115,9 +115,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.1.1.1" data-path="java/spring-boot.html">
+        <li class="chapter " data-level="1.1.1.1" data-path="../spring-boot.html">
             
-                <a href="java/spring-boot.html">
+                <a href="../spring-boot.html">
             
                     
                     spring boot
@@ -129,9 +129,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.1.1.1.1" data-path="java/spring-boot/re-bu-shu.html">
+        <li class="chapter active" data-level="1.1.1.1.1" data-path="re-bu-shu.html">
             
-                <a href="java/spring-boot/re-bu-shu.html">
+                <a href="re-bu-shu.html">
             
                     
                     热部署
@@ -229,9 +229,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.1.4" data-path="cha-cha-kai-fa.html">
+        <li class="chapter " data-level="1.1.4" data-path="../../cha-cha-kai-fa.html">
             
-                <a href="cha-cha-kai-fa.html">
+                <a href="../../cha-cha-kai-fa.html">
             
                     
                     叉叉开发
@@ -243,9 +243,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.1.4.1" data-path="cha-cha-kai-fa/ti-shi.html">
+        <li class="chapter " data-level="1.1.4.1" data-path="../../cha-cha-kai-fa/ti-shi.html">
             
-                <a href="cha-cha-kai-fa/ti-shi.html">
+                <a href="../../cha-cha-kai-fa/ti-shi.html">
             
                     
                     提示
@@ -328,7 +328,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >叉叉开发</a>
+        <a href="../.." >热部署</a>
     </h1>
 </div>
 
@@ -343,7 +343,32 @@
     
                                 <section class="normal markdown-section">
                                 
-                                
+                                <h1 id="spring-boot-&#x5728;&#x5F00;&#x53D1;&#x8FC7;&#x7A0B;&#x4E2D;&#x70ED;&#x90E8;&#x7F72;">Spring Boot &#x5728;&#x5F00;&#x53D1;&#x8FC7;&#x7A0B;&#x4E2D;&#x70ED;&#x90E8;&#x7F72;</h1>
+<h2 id="maven-&#x6DFB;&#x52A0;&#x4F9D;&#x8D56;">Maven &#x6DFB;&#x52A0;&#x4F9D;&#x8D56;</h2>
+<pre><code class="lang-xml">            <span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>  
+                        <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.springframework.boot<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>  
+                        <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>spring-boot-devtools<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>  
+                        <span class="hljs-tag">&lt;<span class="hljs-name">optional</span>&gt;</span>true<span class="hljs-tag">&lt;/<span class="hljs-name">optional</span>&gt;</span>  
+            <span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+</code></pre>
+<h2 id="maven-&#x6DFB;&#x52A0;&#x63D2;&#x4EF6;">Maven &#x6DFB;&#x52A0;&#x63D2;&#x4EF6;</h2>
+<pre><code>&lt;!--spring boot plugin start--&gt;
+    &lt;plugins&gt;
+      &lt;plugin&gt;
+        &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+        &lt;artifactId&gt;spring-boot-maven-plugin&lt;/artifactId&gt;
+        &lt;!--&#x914D;&#x7F6E;&#x70ED;&#x90E8;&#x7F72;--&gt;
+        &lt;dependencies&gt;
+          &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework&lt;/groupId&gt;
+            &lt;artifactId&gt;springloaded&lt;/artifactId&gt;
+            &lt;version&gt;1.2.0.RELEASE&lt;/version&gt;
+          &lt;/dependency&gt;
+        &lt;/dependencies&gt;
+      &lt;/plugin&gt;
+    &lt;/plugins&gt;
+    &lt;!--spring boot plugin end--&gt;
+</code></pre>
                                 
                                 </section>
                             
@@ -370,10 +395,10 @@
 
             
                 
-                
-                <a href="cha-cha-kai-fa/ti-shi.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 提示">
-                    <i class="fa fa-angle-right"></i>
+                <a href="../spring-boot.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: spring boot">
+                    <i class="fa fa-angle-left"></i>
                 </a>
+                
                 
             
         
@@ -382,37 +407,37 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"叉叉开发","level":"1.1.4","depth":2,"next":{"title":"提示","level":"1.1.4.1","depth":3,"path":"cha-cha-kai-fa/ti-shi.md","ref":"cha-cha-kai-fa/ti-shi.md","articles":[]},"previous":{"title":"Vue","level":"1.1.3.2","depth":3,"ref":"","articles":[]},"dir":"neutral"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"cha-cha-kai-fa.md","mtime":"2017-12-24T07:18:14.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-12-24T07:31:21.387Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"热部署","level":"1.1.1.1.1","depth":4,"next":{"title":"数据库","level":"1.1.2","depth":2,"ref":"","articles":[{"title":"Mysql","level":"1.1.2.1","depth":3,"ref":"","articles":[]}]},"previous":{"title":"spring boot","level":"1.1.1.1","depth":3,"path":"java/spring-boot.md","ref":"java/spring-boot.md","articles":[{"title":"热部署","level":"1.1.1.1.1","depth":4,"path":"java/spring-boot/re-bu-shu.md","ref":"java/spring-boot/re-bu-shu.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"java/spring-boot/re-bu-shu.md","mtime":"2017-12-24T07:31:15.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-12-24T07:31:21.387Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
 
         
-    <script src="gitbook/gitbook.js"></script>
-    <script src="gitbook/theme.js"></script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
     
         
-        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
-        
-    
-        
-        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
 
